@@ -1,0 +1,38 @@
+p {
+    text-indent: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#logo {
+    text-align: right;
+    float:right;
+}
+  #logo:after {
+      content:'';
+      display:block;
+      clear: both;
+  }
+  #logo2 {
+    text-align: left;
+    float:left;
+}
+  #logo2:after {
+      content:'';
+      display:block;
+      clear: both;
+  }
+  #logo3 {
+    display: none;
+}
+.bold {
+    font-weight: bolder;
+}
+.italics {
+    font-style: italic;
+}
+#text-div{
+    display: inline;
+    font-style: normal;
+    font-weight: lighter;
+}
+

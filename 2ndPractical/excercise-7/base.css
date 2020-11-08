@@ -1,0 +1,48 @@
+#editor {
+	display: block;
+	width: 900px;
+	border: 1px solid #c3c3c3;
+	margin: 50px auto 0 auto;
+}
+
+#editor-text-container {
+	height: 600px;
+	overflow: auto;
+	padding: 0 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+#editor-buttons {
+	width: 100%;
+	height: auto;
+	display: block;
+	max-width: 100%;
+}
+
+#text-div {
+	font-weight: bold;
+}
+.strike-out{
+	text-decoration: line-through;
+}
+.underline{
+	text-decoration: underline;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+img {
+	max-width: 300px;
+	height: auto;
+}
+#paragraph1{
+	letter-spacing: 2px;
+	line-height: 1.5;
+}
+#paragraph3{
+	word-spacing: 10px;
+}
+#text-div {
+	display: block;
+}
