@@ -54,6 +54,34 @@ function ConstructDate()
     var d2 = new Date();
     return [d,d2];
 }
+function ParseInfo(el)
+{
+    switch(el) {
+        case 0:
+          return "неделя"
+          break;
+        case 1:
+            return "понделник"
+          break;
+          case 2:
+            return "вторник"
+          break;
+          case 3:
+            return "сряда"
+          break; 
+          case 4:
+            return "четвъртък"
+          break;
+          case 5:
+            return "петък"
+          break; 
+          case 6:
+            return "събота"
+          break;
+        default:
+          return;
+      }
+}
 function InfoDate(array)
 {
     var arr=new Array();
@@ -65,6 +93,6 @@ function InfoDate(array)
 }
 function AppendInfo()
 {
-    var a=[[ParseDate(ConstructDate[0]), InfoDate(ConstructDate[0])[0][0]+"day" ,InfoDate(ConstructDate[0])[0][1]+"days"],
-     [ParseDate(ConstructDate[1]), InfoDate(ConstructDate[1])[1][0]+"day" ,InfoDate(ConstructDate[1])[1][1]+"days"]];
+    var a=[[ParseDate(ConstructDate[0]), ", "+ParseInfo(InfoDate(ConstructDate[0])[0][0]) ,InfoDate(ConstructDate[0])[0][1]+"дни"],
+     [ParseDate(ConstructDate[1]),", "+ParseInfo(InfoDate(ConstructDate[1])[1][0])+", " ,InfoDate(ConstructDate[1])[1][1]+"дни"]];
 }
