@@ -1,9 +1,8 @@
 
 body {
-    background: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
-    
-    margin-top: 7rem;
+    background: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);   
     font-size: 16px;
+    margin:0;
 }
 
 .login-form,
@@ -14,7 +13,7 @@ body {
 .login-form {   
     max-width: 32rem; 
     width: 90%;
-    margin: 0 auto;
+    margin: 15% auto 15% auto;
     border-radius: 6px;
     overflow: hidden;
     box-sizing: border-box;
@@ -22,6 +21,12 @@ body {
 
 .login-form__content {
     padding: 2.5rem;
+    padding-bottom: 22%;
+    background: white;
+}
+.login-form__content2 {
+    padding: 2.5rem;
+    padding-bottom: 13%;
     background: white;
 }
 
@@ -38,8 +43,8 @@ body {
     color: #848694;
 }
 .login-form__input_div {
-    width: 100%;
-    margin-bottom: 30px;
+    width: 95%;
+    margin-bottom: 2rem;
     border: none;
     background: transparent;
     outline: none;
@@ -64,6 +69,11 @@ body {
     margin: 0%;
     padding: 0%;
 }
+.login-form__buttons_and_links
+{
+    padding-top: 1.2rem;
+    float: right;
+}
 
 .login-form__button {
     float: right;
@@ -82,15 +92,248 @@ body {
     background: #913af3;
 }
 
-.login-form__links {
-    margin-top: 5rem;
-    text-align: center;
-}
-
 .login-form__link {
     float: right;
-    margin-right: 1.5rem;
+    margin-top:1rem;
+    margin-right: 1.8rem;
     font-size: 0.9em;
-    color: #008067;
+    color:rgb(68, 35, 214);
     text-decoration: none;
+}
+/*-------------------------End of login css-----------------------------------*/
+* {
+    font-family: Helvetica, sans-serif;
+}
+header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 3rem;
+    height: 2.5rem;
+}
+header h1{
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-right: 0.1rem;
+}
+#search{
+    height: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;;
+    border: 1px solid #e4e4e4;
+    width: 15rem;
+    background-color: #f4f9fa;
+}
+#search:focus{
+    outline: none;
+}
+header i {
+    position: absolute;
+    z-index: 3;
+    top: 0.7rem;
+    right: 4rem;
+}
+/*---------------------End of header------------------------*/
+main{
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+ } 
+.profile {
+    height: 10rem;
+    background: white;
+    max-width: 18rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+.profile>p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.profile img{
+    margin-top: 0.5rem;
+    height: 5.25rem;
+    width: 5.25rem;
+    border-radius: 50%;
+}   
+
+
+.profile-reactions {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 1.2rem;
+    background:#f4f9fa;
+    align-items: center;
+}
+
+.posts-reactions input {
+    background: #f4f9fa;
+    border: 1px solid#5fcce2;
+    color:#5fcce2;
+    border-radius: 1rem;
+    height: 1rem;
+    width: 4.2rem;
+    font-weight: 700;
+}
+
+
+.posts-reactions {
+    display: flex;
+    padding-right: 4rem;
+}
+
+.posts-reactions div {
+    padding-right: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.posts-count p:nth-child(2),
+.reactions-count p:nth-child(2) {
+    color: #1cd0f0;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.posts-reactions p:nth-child(1),
+.reactions-count p:nth-child(1) {
+    color: #a2a3a7;
+    margin-bottom: 0.1rem;
+    font-size: 0.7rem;
+}
+#Log-Out{
+    height: 1.7rem;
+    border-radius: 100px;
+    border: 1px solid #1cd0f0;
+    color:#1cd0f0;
+    background: transparent;
+    font-weight: 600;
+}
+/*---------------------End of profile view------------------------*/
+.write-post{
+    display: flex;
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    background:  #f5f5f5;
+    height: 2rem;
+}
+
+.write-post i{
+    position: absolute;
+    top: 1.1rem;
+    right: 2.5rem;
+    color:#1cd0f0;
+}
+
+.write-post input {
+    width: 100%;
+    border: 1px solid #f4f9fa;
+    border-radius: 1rem;
+    padding: 0.5rem 0.9rem;
+    height: 1rem;
+    background: white;
+}
+
+.write-post input:focus{
+    outline: none;
+}
+
+.write-post input::placeholder {
+    color:#1cd0f0;
+}
+
+.write-post input:-ms-input-placeholder {
+    color:#1cd0f0;
+}
+
+.write-post input::-ms-input-placeholder {
+    color:#1cd0f0;
+}
+
+.write-post img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin: 0 1rem 0 0.2rem;
+}
+
+
+.posts {
+    background: white;
+    max-width: 55rem;
+}
+
+.post{
+    display: flex;
+    padding: 1rem 1.5rem;
+    min-height: 7rem;
+    position: relative;
+}
+
+.post img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.post-content span:first-child{
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
+
+.post-content p {
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+/*---------------End of Flutter main content--------*/
+
+i.fas.fa-times {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.3rem;
+}
+
+i.fas.fa-circle.fa-xs,
+.post-content span:nth-child(3),
+i.fas.fa-times {
+    color: #848694;
+}
+
+i.fas.fa-circle.fa-xs{
+    font-size: 0.3em;
+    vertical-align: middle;
+}
+/*---------------End of Font Awesome Customizing--------*/
+.likes-dislikes {
+    padding-right: 3.2rem;
+}
+.bottom-border{
+    border-bottom: 1px solid #f4f9fa;
+}
+
+  /* Media query for screens <= 1024px */
+  @media screen and (max-width: 890px) {
+    main {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .profile { 
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    header i {
+        right: 2rem;
+    }
 }
