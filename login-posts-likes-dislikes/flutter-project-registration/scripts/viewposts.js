@@ -39,7 +39,6 @@
 	}
 
 	newPostForm.addEventListener('submit', event => {
-		// Logic when posting new tweet
 		event.preventDefault();
 		tweet.post(newPost.value);
 		
@@ -50,7 +49,6 @@
 	});
 
 	firebase.auth().onAuthStateChanged(user => {
-		// Update profile posts information
 		const info = auth.getUserStats(user.uid);
 
 		info.once('value').then((snapshot) => {			
