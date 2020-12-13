@@ -107,9 +107,9 @@
 						var TweetsUser = (snapshot.val() && snapshot.val().tweets) || 0;
 						dbRefUser.update({ tweets: TweetsUser - 1, likes: LikesUser - DislikesPost - LikesPost });
 						let TweetsBox = document.getElementById("profile-posts-count");
-						let likesEl = document.getElementById("profile-likes-count");
+						let LikesBox = document.getElementById("profile-likes-count");
 						TweetsBox.innerHTML = +TweetsBox.innerHTML - 1;
-						likesEl.innerHTML = +likesEl.innerHTML - (DislikesPost + LikesPost);
+						LikesBox.innerHTML = +LikesBox.innerHTML - (DislikesPost + LikesPost);
 					});
 					
 					tweet.delete(data.key);
