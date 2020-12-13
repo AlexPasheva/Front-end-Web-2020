@@ -5,4 +5,4 @@ A uni course where I put all my homeworks <br />
 3rd Practicle - 15.11.2020 <br />
 4th Practicle - was not there but because of that I did extra exercise in 5th <br />
 5th Practicle - 29.11.2020 + extra (Flutter) <br />
-6th Practicle - <br />
+6th Practicle - 13/12/2020 <br />
